@@ -21,3 +21,9 @@ npm run start
 ## Figma
 
 [Figma Prototypes](https://www.figma.com/file/Qmk8cag47Y4R73mx1fBfHF/Sass-Example-Website?node-id=0%3A1)
+
+## Resources
+
+- [Sass opinionated styleguide](https://sass-guidelin.es/)
+- [Setting up Sass with React](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)
+- [CSS Specificity](http://www.standardista.com/css3/css-specificity/)
