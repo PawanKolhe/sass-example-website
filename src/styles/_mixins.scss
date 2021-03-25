@@ -1,0 +1,15 @@
+@mixin generate-color-shades($name, $color) {
+  --#{$name}-color: #{$color};
+  @for $i from 1 to 10 {
+    --#{$name}-color-dark-#{$i * 5}: #{darken($color, $i * 5)};
+  }
+  @for $i from 1 to 10 {
+    --#{$name}-color-light-#{$i * 5}: #{lighten($color, $i * 5)};
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

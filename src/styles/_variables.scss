@@ -1,0 +1,14 @@
+@use "mixins" as m;
+
+$primary-color: #8D50F0;
+$background-color: #ffffff;
+$text-color: #111;
+$font-family: 'Work Sans', san-serif;
+
+:root {
+  @include m.generate-color-shades('primary', $primary-color);
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+  --text-color: #{$text-color};
+  --font-family: #{$font-family};
+}

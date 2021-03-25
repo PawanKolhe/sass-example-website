@@ -1,0 +1,71 @@
+.BannerContainer {
+  padding: 0 0;
+}
+
+.Banner {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 80px 80px;
+  color: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Banner__contentBox {
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+
+  h1 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+}
+
+.Graphics1, .Graphics2 {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.Graphics1 {
+  left: 40px;
+}
+
+.Graphics2 {
+  right: 40px;
+}
+
+@media (max-width: 1000px) {
+  .Graphics1, .Graphics2 {
+    width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .Graphics1, .Graphics2 {
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 600px) {
+  .Banner {
+    padding: 40px 35px;
+  }
+  .Graphics1 {
+    display: none;
+  }
+  .Graphics2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 30px;
+    width: 300px;
+  }
+}

@@ -1,0 +1,6 @@
+@use '../../styles/mixins' as m;
+
+.Footer {
+  padding: 20px;
+  @include m.flex-center();
+}

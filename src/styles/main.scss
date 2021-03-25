@@ -1,0 +1,34 @@
+@use "global";
+@use "variables";
+
+@import-normalize;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color-dark-10);
+}
+::-webkit-scrollbar-thumb:active {
+  background: var(--primary-color-dark-20);
+}

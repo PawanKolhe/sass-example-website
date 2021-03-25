@@ -1,0 +1,46 @@
+@use "../../styles/mixins" as m;
+
+.Nav {
+  color: blue;
+  @include m.flex-center();
+  flex-direction: row;
+  height: 90px;
+}
+
+.Nav__link {
+  text-decoration: none;
+  margin: 10px 20px;
+  font-weight: 500;
+  color: var(--text-color);;
+  position: relative;
+  padding: 0 20px;
+
+  &.Nav__linkActive {
+    font-weight: 600;
+
+    .Nav__linkDot {
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: var(--primary-color);
+      position: absolute;
+      top: calc(100% + 5px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .Nav__link {
+    margin: 10px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Nav {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+  }
+}
